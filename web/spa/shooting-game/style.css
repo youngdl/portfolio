@@ -1,0 +1,34 @@
+#canvasContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#message-box {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  left: 35%;
+  top: 40%;
+  background-color: aquamarine;
+  height: 22%;
+  width: 28%;
+}
+#message-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+}
+#message {
+  font-size: 2rem;
+}
+.button-container {
+  height: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+button.botton-containter {
+  font-size: 10px;
+}

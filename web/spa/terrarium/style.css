@@ -1,0 +1,148 @@
+:root {
+    --white: #ffffff;
+    --black: #000000;
+    --green: #d2f7d2;
+    --brown: #3a241d;
+}
+* {
+    color: var(--fontColor);
+    font-family: helvetica, arial, sans-serif;
+}
+body {
+    background: var(--bg);
+}
+
+h1 {
+    font-family: 'MonteCarlo', cursive;
+    font-size: 4rem;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.light-theme {
+    --bg: var(--white);
+    --container-bg: #eee;
+    --fontColor: var(--brown);
+    --jar-opacity: 0.45;
+    --button-fontColor: rgb(0, 38, 255);
+}
+.dark-theme {
+    --bg: var(--black);
+    --container-bg: #3f3c3c;
+    --fontColor: var(--green);
+    --jar-opacity: 0.8;
+    --button-fontColor: rgb(191, 0, 255);
+}
+
+.container {
+    background-color: var(--container-bg);
+}
+#left-container {
+    width: 15%;
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    height: 100%;
+    padding: 10px;
+}
+#right-container {
+    width: 15%;
+    right: 0px;
+    top: 0px;
+    position: absolute;
+    height: 100%;
+    padding: 10px;
+}
+
+.plant-holder {
+    position: relative;
+    height: 13%;
+}
+.plant {
+    position:absolute;
+    max-width: 150%;
+    max-height: 150%;
+    z-index: 2;
+}
+
+.jar-walls {
+    height: 80%;
+    width: 60%;
+    background: #d1e1df;
+    border-radius: 2rem;
+    position: absolute;
+    bottom: 0.5%;
+    left: 20%;
+    opacity: var(--jar-opacity);
+    z-index: 1;
+}
+.jar-top {
+    width: 50%;
+    height: 5%;
+    background: #d1e1df;
+    position: absolute;
+    bottom: 80.5%;
+    left: 25%;
+    opacity: calc(var(--jar-opacity) + 0.2);
+    z-index: 1;
+}
+.jar-bottom {
+    width: 50%;
+    height: 1%;
+    background: #d1e1df;
+    position: absolute;
+    bottom: 0%;
+    left: 25%;
+    opacity: calc(var(--jar-opacity) + 0.2);
+}
+.dirt {
+    width: 60%;
+    height: 5%;
+    background: #3e241d;
+    position: absolute;
+    border-radius: 0 0 2rem 2rem;
+    bottom: 1%;
+    left: 20%;
+    opacity: calc(var(--jar-opacity) + 0.1);
+    z-index: -1;
+}
+.jar-glossy-long {
+    width: 2%;
+    height: 20%;
+    background: #e6ffff;
+    position: absolute;
+    border-radius: 3rem;
+    bottom:20%;
+    left: 4%;
+    opacity: 1;
+    z-index: 2;
+}
+.jar-glossy-short {
+    width: 2%;
+    height: 5%;
+    background: #e6ffff;
+    position: absolute;
+    border-radius: 3rem;
+    bottom:45%;
+    left: 4%;
+    opacity: 1;
+    z-index: 2;
+}
+
+.light-button {
+    color: var(--button-fontColor);
+    font-weight: bolder;
+    font-size: 1.1rem;
+    background: rgba(0, 0, 0, 0.3);
+    height: 8.5%;
+    width: 10%;
+    position: absolute;
+    right: 2%;
+    top: 5%;
+    border-radius: 0.5rem;
+    border: 0.5px solid black;
+    z-index: 2;
+}
+.light-button:hover {
+    background: rgba(0, 0, 0, 0.6);
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Test Your Typing Skills!</title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="./sytle.css">
+        <script src="./script.js" defer></script>
+    </head>
+    <body>
+        <h1>Typing Game</h1>
+        <div class="page-body">
+            <div id="main_part">
+                <div id="intro-container"><div id="introduction">
+                    <p>Click **Start** to begin and type as fast as you can!</p>
+                </div></div>
+                <div id="quote-container"><div id="quote"></div></div>
+                <div id="empty-div-container"></div>
+                <div id="user_input-container"><div id="user_input">
+                    <input type="text" aria-label="current word" id="typed-value">
+                    <button type="button" id="start">Start</button>
+                </div></div>
+            </div>
+            <div id="side-ranking-container">
+                    <div id="ranking-head-container">
+                        <div id="ranking-head">Ranking</div>
+                    </div>
+                    <div id="ranking-content-container">
+                        <ol id="ranking-content"></ol>
+                    </div>
+            </div>
+        </div>
+        <div id="message">
+            <div id="message-content-container"><div id="message-content"></div></div>
+            <span id="X-button">&times;</span>
+            <div class="choice">
+                <button id="once-more">Once More</button>
+                <button id="that-it">That's It</button>
+                <button id="save">Save to Ranking</button>
+            </div>
+        </div>
+    </body>
+</html>

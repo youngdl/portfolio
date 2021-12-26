@@ -41,11 +41,17 @@ ul {
 
 .sidebar-heading {
     font-size: 20px;
+    margin: 30px, 0px, 10px;
+}
+
+.sidebar-subheading {
+    margin: 20px 0px 10px;
 }
 
 .sidebar-link {
     padding: 2px;
 }
+
 
 .content {
     max-width: 768px;

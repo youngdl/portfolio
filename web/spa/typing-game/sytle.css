@@ -1,0 +1,111 @@
+h1 {
+    text-align: center;
+    font-size: 4rem;
+}
+
+.page-body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+#main_part {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+#side-ranking-container {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    border: black solid 1px;
+    border-radius: 1rem;
+    width: 15%;    
+}
+/* #ranking-head-container {
+    padding-top: 20px;
+} */
+#ranking-head {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center
+}
+#ranking-content {
+    font-size: 1rem;
+}
+
+
+#intro-container {
+    flex: 2;
+}
+#introduction {
+    font-size: 2rem;
+    color: rgb(205, 84, 8);
+}
+#quote-container {
+    flex: 3;
+}
+#quote {
+    font-size: 1.5rem;
+}
+#empty-div-container {
+    flex: 2;
+}
+#user_input-container {
+    flex: 1;
+}
+.highlight {
+    background: greenyellow;
+}
+
+.error {
+    background: rgb(240, 150, 150);
+}
+
+.error_char {
+    color: rgb(102, 200, 242);
+    font-weight: bolder;
+}
+
+#message {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    left: 25%;
+    top: 35%;
+    background-color: rgb(249, 196, 167);
+    height: 35%;
+    width:  50%;
+}
+#message-content-container {
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#message-content {
+    font-size: 2.5rem;
+}
+#X-button {
+    color: darkgray;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+#X-button:hover {
+    color: black;
+}
+
+.choice {
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+button.choice {
+    font-size: 10px;
+}
