@@ -1,4 +1,57 @@
-html, body {
+h1, h2, h3, h4, h5, h6, a, p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+}
+
+html {
+    background: #eee;
     margin: 0;
     padding: 0;
+}
+
+body {
+    display: flex;
+    margin: auto;
+    max-width: 1024px;
+}
+
+ul {
+    margin: 0;
+}
+
+.sidebar, .content {
+    background: #fff;
+    border-radius: 5px;
+    margin: 30px 15px;
+    padding: 30px;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    max-width: 256px;
+    min-width: 256px;
+}
+
+.sidebar-logo {
+    color: #000;
+    font-size: 32px;
+    text-decoration: none;
+}
+
+.sidebar-heading {
+    font-size: 20px;
+}
+
+.sidebar-link {
+    padding: 2px;
+}
+
+.content {
+    max-width: 768px;
+    width: 100%;
+}
+
+h1 {
+    margin-top: 0;
 }
